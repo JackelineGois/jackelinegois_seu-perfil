@@ -1,14 +1,14 @@
 import { Badge, Box, Image, Text } from "native-base";
 import { Dimensions } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
 
-export const SliderCardItem = () => {
+export const AdsSliderCardItem = (props) => {
   const width = Dimensions.get("window").width;
   return (
     <Box
       style={{
         width: width / 1.8,
         height: width / 2.5,
-        backgroundColor: "#123493",
         justifyContent: "space-between",
         alignItems: "left",
         position: "left",
@@ -21,12 +21,13 @@ export const SliderCardItem = () => {
       display={"flex"}
     >
       <Badge
+        zIndex={1}
         rounded={"lg"}
-        colorScheme="warning"
+        colorScheme={props.colorScheme ? props.colorScheme : "error"}
         variant={"solid"}
         alignSelf="flex-start"
       >
-        Parceiros
+        {props.text_badge}
       </Badge>
       <Image
         top={0}
@@ -37,13 +38,23 @@ export const SliderCardItem = () => {
         width={"100%"}
         height={"100%"}
         rounded={"md"}
-        source={require("../../../assets/image-frutas.jpg")}
+        source={props.image_source ? props.image_source : null}
         zIndex={-1}
       />
-      <Text color={"white"} variant={"h1"}>
-        {" "}
-        Diabtes: Alimentos para evitar!
+      <Text zIndex={1} color={"white"} fontSize={14}>
+        {props.text_bottom}
       </Text>
+      <LinearGradient
+        colors={["transparent", "rgba(0,0,0,0.8)"]}
+        style={{
+          position: "absolute",
+          top: 0,
+          bottom: 0,
+          right: 0,
+          left: 0,
+        }}
+        zIndex={0}
+      />
     </Box>
   );
 };

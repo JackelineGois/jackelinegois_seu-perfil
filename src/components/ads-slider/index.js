@@ -1,6 +1,6 @@
 import { ScrollView } from "native-base";
 import { Dimensions } from "react-native";
-import { SliderCardItem } from "./card-item";
+import { AdsSliderCardItem } from "./_card-item";
 
 export const AdsSlider = () => {
   const width = Dimensions.get("window").width;
@@ -11,8 +11,18 @@ export const AdsSlider = () => {
       widht={"100%"}
       paddingLeft={5}
     >
-      <SliderCardItem />
-      <SliderCardItem />
+      <AdsSliderCardItem
+        colorScheme={"warning"}
+        text_badge="Parceiros"
+        text_bottom="Diabetes: Alimentos para evitar."
+        image_source={require("../../../assets/image-frutas.jpg")}
+      />
+      <AdsSliderCardItem
+        colorScheme={"info"}
+        text_badge="Capacitações"
+        text_bottom="Como ministrar doses"
+        image_source={require("../../../assets/image-saude.jpg")}
+      />
     </ScrollView>
   );
 };
