@@ -6,8 +6,8 @@ export const SliderCardItem = () => {
   return (
     <Box
       style={{
-        width: width / 1.5,
-        height: width / 2.3,
+        width: width / 1.8,
+        height: width / 2.5,
         backgroundColor: "#123493",
         justifyContent: "space-between",
         alignItems: "left",
