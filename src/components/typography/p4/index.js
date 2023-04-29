@@ -5,7 +5,7 @@ export const TypographyP4 = ({ text }) => {
   return (
     <Heading
       fontSize={14}
-      color={Palette.text}
+      color={Palette.dark_green}
       fontWeight={"semibold"}
       marginTop={15}
     >

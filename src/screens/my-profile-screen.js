@@ -14,6 +14,7 @@ import { ProfileCard } from "../components/profile-card";
 import { AntDesign } from "@expo/vector-icons";
 import { AdsSlider } from "../components/ads-slider/index.js";
 import { TypographyP4 } from "../components/typography/p4";
+import { TypographyLink } from "../components/typography/link";
 
 export const MyProfileScreen = () => {
   return (
@@ -31,17 +32,17 @@ export const MyProfileScreen = () => {
             <ProfileCard />
             <Divider />
           </Box>
-
-          <Button
+          <TypographyLink
             variant={"ghost"}
-            rightIcon={<AntDesign name="arrowright" size={24} color="black" />}
-          >
-            Completar perfil
-          </Button>
-          <Box>
-            <HStack justifyContent={"space-between"}>
-              <Text> Capacitações profissionais</Text>
-              <b>Ver Mais </b>
+            rightIcon={
+              <AntDesign name="arrowright" size={24} color="inherit" />
+            }
+            text={"Completar perfil"}
+          />
+          <Box marginBottom={2}>
+            <HStack justifyContent={"space-between"} alignItems={"center"}>
+              <TypographyP4 text={"Capacitações profissionais"} />
+              <TypographyLink text={"Ver mais"} />
             </HStack>
           </Box>
         </VStack>
