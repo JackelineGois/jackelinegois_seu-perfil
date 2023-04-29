@@ -1,5 +1,6 @@
 import { HStack, Input } from "native-base";
 import { Feather } from "@expo/vector-icons";
+import { Palette } from "../../theme/palette";
 
 export const TopSearch = () => {
   return (
@@ -8,20 +9,24 @@ export const TopSearch = () => {
       w="full"
       space={3}
       py={4}
-      alignItems={"center"}
+      alignItems={"end"}
       justifyContent={"center"}
       safeAreaTop
-      minHeight={250}
+      minHeight={150}
     >
       <Input
+        placeholderTextColor={Palette.text}
+        marginBottom={3}
         InputLeftElement={
           <Feather
             name="search"
-            size={24}
-            color="black"
+            size={14}
+            color={Palette.text}
             style={{ marginLeft: "8px" }}
           />
         }
+        fontSize={14}
+        fontWeight={"regular"}
         variant={"filled"}
         placeholder="Buscar Capacitações, profissionais..."
         w="85%"
