@@ -13,6 +13,7 @@ import { CustomAlert } from "../components/custom-alert";
 import { ProfileCard } from "../components/profile-card";
 import { AntDesign } from "@expo/vector-icons";
 import { AdsSlider } from "../components/ads-slider/index.js";
+import { TypographyP4 } from "../components/typography/p4";
 
 export const MyProfileScreen = () => {
   return (
@@ -20,15 +21,13 @@ export const MyProfileScreen = () => {
       <TopSearch />
       <Container
         minWidth={"100%"}
-        pl={2}
-        pr={2}
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <VStack space={2} paddingLeft={5}>
+        <VStack space={3} paddingLeft={5} paddingRight={5}>
           <Box width={"100%"}>
             <CustomAlert />
-            <Heading size={"2x1"}> Seu Perfil</Heading>
+            <TypographyP4 text={"Seu Perfil"} />
             <ProfileCard />
             <Divider />
           </Box>
