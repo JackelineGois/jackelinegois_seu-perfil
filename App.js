@@ -1,14 +1,13 @@
 import { StatusBar } from "expo-status-bar";
 import { NativeBaseProvider } from "native-base";
 import { StyleSheet, Text, View } from "react-native";
+import { MyProfileScreen } from "./src/screens/my-profile-screen";
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <StatusBar style="auto" />
-      </View>
+      <MyProfileScreen />
+      <StatusBar style="auto" />
     </NativeBaseProvider>
   );
 }
