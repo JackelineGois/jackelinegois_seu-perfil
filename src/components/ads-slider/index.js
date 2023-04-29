@@ -3,12 +3,11 @@ import { Dimensions } from "react-native";
 import { AdsSliderCardItem } from "./_card-item";
 
 export const AdsSlider = () => {
-  const width = Dimensions.get("window").width;
   return (
     <ScrollView
       showsHorizontalScrollIndicator={false}
       horizontal={true}
-      widht={"100%"}
+      width={"100%"}
       paddingLeft={5}
     >
       <AdsSliderCardItem

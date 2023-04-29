@@ -30,7 +30,8 @@ export const MyProfileScreen = () => {
             <CustomAlert />
             <TypographyP4 text={"Seu Perfil"} />
             <ProfileCard />
-            <Divider />
+
+            <Divider marginTop={5} />
           </Box>
           <TypographyLink
             variant={"ghost"}

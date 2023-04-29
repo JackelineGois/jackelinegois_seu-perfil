@@ -9,6 +9,7 @@ export const TypographyP4 = (props) => {
       color={Palette.dark_green}
       fontWeight={"semibold"}
       marginTop={15}
+      marginBottom={15}
     >
       {props.text}
     </Heading>

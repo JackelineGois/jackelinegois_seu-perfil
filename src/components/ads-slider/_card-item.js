@@ -11,7 +11,7 @@ export const AdsSliderCardItem = (props) => {
         height: width / 2.5,
         justifyContent: "space-between",
         alignItems: "left",
-        position: "left",
+        position: "relative",
         flexDir: "column",
       }}
       marginRight={5}
