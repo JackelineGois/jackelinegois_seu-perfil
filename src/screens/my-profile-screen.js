@@ -25,7 +25,7 @@ export const MyProfileScreen = () => {
         justifyContent={"center"}
         alignItems={"center"}
       >
-        <VStack space={3} paddingLeft={5} paddingRight={5}>
+        <VStack width={"100%"} space={3} paddingLeft={5} paddingRight={5}>
           <Box width={"100%"}>
             <CustomAlert />
             <TypographyP4 text={"Seu Perfil"} />

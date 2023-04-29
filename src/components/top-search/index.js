@@ -29,7 +29,7 @@ export const TopSearch = () => {
         fontWeight={"regular"}
         variant={"filled"}
         placeholder="Buscar Capacitações, profissionais..."
-        w="85%"
+        w="calc(100% - 40px)"
         type="search"
         h={12}
         borderWidht={0}
