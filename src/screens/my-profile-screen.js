@@ -1,6 +1,7 @@
-import { VStack, Container, Text } from "native-base";
+import { VStack, Container, Heading } from "native-base";
 import { TopSearch } from "../components/top-search";
 import { CustomAlert } from "../components/custom-alert";
+import { ProfileCard } from "../components/profile-card";
 
 export const MyProfileScreen = () => {
   return (
@@ -14,7 +15,8 @@ export const MyProfileScreen = () => {
         alignItems={"center"}
       >
         <CustomAlert />
-        <Text> My Profile Screen</Text>
+        <Heading size={"2x1"}> Seu Perfil</Heading>
+        <ProfileCard />
       </Container>
     </VStack>
   );
